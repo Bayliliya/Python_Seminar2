@@ -14,12 +14,13 @@
 соответствующий день. Температуры – целые числа и лежат в
 диапазоне от –50 до 50
 """
+from random import randrange
 N = int (input ( "Enter N = "))
 count = 0
 max1 = 0
 max = max1
 for i in range(N):
-    a = int(input("Введите число от -50 до 50: "))
+    a = randrange(-50,50)
     print(a, end =" ")
     if a>0:
         count +=1
@@ -28,7 +29,7 @@ for i in range(N):
         if max1 >= max:
             max = max1
         count = 0
-print (f"Количество дней в оттепели - {max}")        
+print (f"Максимальное количество дней в оттепели - {max}")        
         
 
 
