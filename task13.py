@@ -16,19 +16,17 @@
 """
 from random import randrange
 N = int (input ( "Enter N = "))
-count = 0
 max1 = 0
-max = max1
+max = 0
 for i in range(N):
     a = randrange(-50,50)
     print(a, end =" ")
     if a>0:
-        count +=1
-        max1 = count
+        max1 +=1
     else:
         if max1 >= max:
             max = max1
-        count = 0
+        max1 = 0
 print (f"Максимальное количество дней в оттепели - {max}")        
         
 
