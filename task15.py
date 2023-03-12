@@ -9,6 +9,6 @@ for i in range(N):
     print(a, end =" ")
     if a > max:
         max = a
-    elif a < min:
+    if a < min:
         min = a
 print (f"максимальный вес - {max}, Минимальный вес - {min}")        
