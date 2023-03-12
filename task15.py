@@ -2,8 +2,8 @@
 """
 from random import randrange
 N = int (input ( "Введите количество арбузов = "))
-max = 0
-min = 20
+max = float('-inf')
+min = float ('inf')
 for i in range(N):
     a = randrange(0,20)
     print(a, end =" ")
