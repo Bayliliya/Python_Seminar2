@@ -24,7 +24,7 @@ for i in range(N):
     if a>0:
         max1 +=1
     else:
-        if max1 >= max:
+        if max1 >max:
             max = max1
         max1 = 0
 print (f"Максимальное количество дней в оттепели - {max}")        
