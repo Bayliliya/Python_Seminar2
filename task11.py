@@ -9,11 +9,11 @@ a2 = 1
 sum = 1
 count = 2
 while sum < A:
-    sum = a1+a2
+    sum = a1 + a2
     a1 = a2
     a2 = sum
     count += 1
 if sum == A:
-    print (count)
+    print(count)
 else:
-    print (-1)       
+    print(-1)
